@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Homework 10</title>
+    <title>Menu Page</title>
+    <!-- ModernNormalize -->
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Material Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <div class="toolbar">
       <!-- Разметка переключателя темы -->
-      <div class="theme-switch">
+      <div class="theme-switch animate__bounceInLeft">
         <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
           <use href="./images/sprite.svg#sun"></use>
         </svg>
@@ -27,12 +36,7 @@
             id="theme-switch-toggle"
             aria-label="Переключить между тёмной и светлой темой"
           />
-          <label
-            aria-hidden="true"
-            class="theme-switch__track"
-            for="theme-switch-toggle"
-          >
-          </label>
+          <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle"> </label>
           <div aria-hidden="true" class="theme-switch__marker"></div>
         </div>
 
@@ -44,5 +48,6 @@
 
     <!-- В этот список рендери разметку меню -->
     <ul class="menu js-menu"></ul>
+    <script src="./index.js"></script>
   </body>
 </html>
